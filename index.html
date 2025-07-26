@@ -2,15 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Finch Fab</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #121212;
       color: #f5f5f5;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #ff6a00;
@@ -18,29 +19,35 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
     }
     nav a {
-      color: #fff;
+      color: white;
       margin-left: 2rem;
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 6rem 2rem 4rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background-color: #1c1c1c;
+      padding-top: 8rem;
     }
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      color: #ccc;
     }
     .btn {
       background-color: #ff6a00;
@@ -53,9 +60,15 @@
     }
     footer {
       background-color: #1c1c1c;
-      padding: 1rem 2rem;
+      padding: 2rem;
       text-align: center;
       color: #999;
+    }
+    .feature {
+      background-color: #1c1c1c;
+      border-left: 4px solid #ff6a00;
+      padding: 1rem;
+      margin: 1rem 0;
     }
   </style>
 </head>
@@ -63,20 +76,43 @@
   <header>
     <h1>Finch Fab</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Download</a>
-      <a href="#">Subscribe</a>
+      <a href="#home">Home</a>
+      <a href="#download">Download</a>
+      <a href="#subscribe">Subscribe</a>
       <a href="/admin/chats.html?key=weldmaster2025">Admin</a>
     </nav>
   </header>
-  <div class="hero">
+
+  <section id="home" class="section hero">
     <h2>Smarter Sheet Metal Starts Here</h2>
-    <p>The all-in-one automation tool for DXF, traveler, and nesting workflows</p>
-    <button class="btn">Download Tool</button>
-    <button class="btn">Subscribe</button>
-  </div>
+    <p>Fabrication automation tools for modern manufacturing.</p>
+    <button class="btn" onclick="document.location='#download'">Get Started</button>
+  </section>
+
+  <section id="features" class="section">
+    <h2>What Finch Fab Can Do</h2>
+    <div class="feature">✔ Automatically export DXFs, PDFs, and Travelers</div>
+    <div class="feature">✔ Generate weld specs from SolidWorks geometry</div>
+    <div class="feature">✔ License activation and revision approval system</div>
+    <div class="feature">✔ Nesting file export and sheet size suggestion</div>
+  </section>
+
+  <section id="download" class="section">
+    <h2>Download Finch Fab Tool</h2>
+    <p>Use the latest version of our Excel-based shop automation platform.</p>
+    <button class="btn" onclick="window.location='/shop/FinchFab_Tool_Pro.xlsm'">Download Tool</button>
+    <p><small>Version 1.0 | Requires Excel 2016 or newer</small></p>
+  </section>
+
+  <section id="subscribe" class="section">
+    <h2>Subscribe to Unlock Pro Features</h2>
+    <p>Buy a license to unlock nesting exports, weld tools, and PDM integration.</p>
+    <button class="btn" onclick="window.location='https://gumroad.com'">Go to Gumroad</button>
+  </section>
+
   <footer>
-    &copy; 2025 Finch Fab. Built for real fabrication floors.
+    &copy; 2025 Finch Fab. Built for the fabrication floor. <br />
+    <a href="https://github.com/kcfinch96-beep/kcfinch96-beep.github.io" style="color:#888">GitHub</a>
   </footer>
 </body>
 </html>
