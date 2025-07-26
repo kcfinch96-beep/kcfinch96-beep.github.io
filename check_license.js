@@ -1,1 +1,0 @@
-// JavaScript license checker placeholder
