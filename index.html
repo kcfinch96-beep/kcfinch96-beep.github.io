@@ -1,20 +1,82 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Finch Fab</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 50px; background: #f5f5f5; }
-    h1 { color: #2c3e50; }
-    .links a { margin: 10px; display: block; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    header {
+      background-color: #ff6a00;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #1c1c1c;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #ccc;
+    }
+    .btn {
+      background-color: #ff6a00;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1rem;
+      margin: 2rem 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1c1c1c;
+      padding: 1rem 2rem;
+      text-align: center;
+      color: #999;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Finch Fab</h1>
-  <p>Your go-to platform for fabrication tools and shop automation.</p>
-  <div class="links">
-    <a href="/shop/FinchFab_Tool_Pro.xlsm">Download Shop Tool</a>
-    <a href="/finchfab/_admin/chats.html?key=weldmaster2025">View Chat History (private)</a>
+  <header>
+    <h1>Finch Fab</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Download</a>
+      <a href="#">Subscribe</a>
+      <a href="/admin/chats.html?key=weldmaster2025">Admin</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h2>Smarter Sheet Metal Starts Here</h2>
+    <p>The all-in-one automation tool for DXF, traveler, and nesting workflows</p>
+    <button class="btn">Download Tool</button>
+    <button class="btn">Subscribe</button>
   </div>
+  <footer>
+    &copy; 2025 Finch Fab. Built for real fabrication floors.
+  </footer>
 </body>
 </html>
