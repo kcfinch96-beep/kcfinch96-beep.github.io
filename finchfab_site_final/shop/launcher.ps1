@@ -1,1 +1,0 @@
-# PowerShell script to auto-update and check license
