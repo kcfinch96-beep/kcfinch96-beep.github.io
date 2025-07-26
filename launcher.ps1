@@ -1,0 +1,1 @@
+# PowerShell script for automatic updates and license check
